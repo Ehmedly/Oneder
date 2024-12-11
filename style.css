@@ -5,7 +5,7 @@ header {
 
 .container {
   width: 72vw;
-  margin: 0 auto;
+  margin: auto;
 }
 
 nav {
@@ -90,7 +90,7 @@ nav ul {
   font: 900 3rem "Rubik";
 }
 
-.link-getintouch{
+.link-getintouch {
   display: inline-block;
   background-color: #007fad;
   line-height: 1.5;
@@ -116,10 +116,15 @@ nav ul {
 
 .section2-bg-div h2,
 .title-div h2,
-.section4-bg-div .title-and-links-div {
+.section4-bg-div .title-and-links-div,
+.section5-bg-div .container h2,
+.section6-bg-div .container h2,
+.section7-bg-div .container h2,
+.section8-bg-div .container h2,
+.section10-bg-div .container h2 {
   text-transform: capitalize;
   font: 900 40px "Rubik";
-  color: rgb(1, 140, 190);
+  color: #018cbe;
   text-align: center;
 }
 
@@ -216,22 +221,26 @@ nav ul {
 }
 
 /*SECTION 4 STYLES*/
-.section4-bg-div{
-  height:200vh;
+.section4-bg-div {
+  height: 185vh;
 }
-.section4-bg-div img{
+
+.section4-bg-div img {
   width: 260px;
   height: fit-content;
   object-fit: cover;
 }
-.section4-products-div{
-  height:160vh;
+
+.section4-products-div {
+  height: 150vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 21px;
 }
-.section4-links-div a{
+
+.section4-links-div a,
+.section7-card-div a {
   display: inline-block;
   background-color: #f1f1f1;
   line-height: 1.5;
@@ -240,15 +249,262 @@ nav ul {
   color: #3e3e3e;
   text-transform: capitalize;
   font: 350 14px "Rubik";
+  transition: .4s;
 }
-.section4-links-div a:hover{
+
+.section4-links-div a:hover,
+.section7-card-div a:hover {
   background-color: #007fad;
   color: #ffffff;
 }
-.section4-links-div{
+
+.section4-links-div {
   display: inline-block;
   padding: 30px 0 45px 0;
   display: flex;
   justify-content: center;
   gap: 15px;
 }
+
+/*SECTION 5 STYLES*/
+
+.section5-bg-div {
+  height: 100vh;
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+}
+
+.section5-bg-div .container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+}
+
+.section5-cards-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+
+.section5-card-div {
+  max-width: 31%;
+}
+
+.section5-card-div h3 {
+  font: 370 20px "Rubik";
+}
+
+.section5-card-div p {
+  font: 370 16px "Rubik";
+  color: gray;
+  line-height: 28px;
+  padding: 10px 0 15px 0;
+}
+
+.section5-card-div a {
+  color: #018cbe;
+  font: 360 16px "Rubik";
+  text-transform: capitalize;
+  line-height: 28px;
+}
+
+.section5-card-div i {
+  font-size: 60px;
+  padding: 15px 0;
+  color: #018cbe;
+}
+
+/*SECTION 6 STYLES*/
+.section6-bg-div {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section6-bg-div .container {
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-name-div {
+  display: flex;
+  align-items: center;
+  width: 190px;
+  justify-content: space-between;
+}
+
+.profile-name-div img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-name-div h6 {
+  font: 400 16px "Rubik";
+  color: gray;
+  text-transform: capitalize;
+}
+
+.section6-bg-div .container p {
+  font: italic 24px "Rubik";
+  max-width: 775px;
+  color: #3e3e3e9e;
+  text-align: center;
+  line-height: 34px;
+}
+
+/*SECTION 7 STYLES*/
+.section7-bg-div {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section7-bg-div .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.section7-cards-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*SECTION 8 STYLES*/
+.section8-bg-div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section8-bg-div .container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.faq-div {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px 30px;
+}
+
+.section8-bg-div .container .question-div {
+  max-width: 520px;
+}
+
+.section8-bg-div .container .question-div p {
+  font: 350 16px "Rubik";
+  color: gray;
+  line-height: 28px;
+}
+
+.section8-bg-div .container .question-div h3 {
+  margin-bottom: 20px;
+  font: 450 20px "Rubik";
+  line-height: 1.2;
+}
+
+/*SECTION 9 STYLES*/
+.section9-bg-div{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.section9-bg-div .container{
+  display: flex;
+  justify-content: space-between;
+}
+.section9-cards-div{
+  display: flex;
+  gap:25px;
+}
+.section9-bg-div img{
+  height: 400px;
+}
+.section9-bg-div i{
+  font-size: 40px;
+  color: #007fad;
+  margin-bottom: 30px;
+}
+.section9-card-div h4{
+  font: 380 20px "Rubik";
+  line-height: 1.2;
+}
+.section9-card-div p{
+  font: 350 16px "Rubik";
+  color: gray;
+  line-height: 1.7;
+  margin: 15px 0 20px 0;
+}
+.section9-card-div a{
+  font: 350 16px "Rubik";
+  text-transform: capitalize;
+  color: #007fad;
+}
+/*SECTION 10 STYLES*/
+.section10-bg-div{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.section10-bg-div .container{
+  display: flex;
+  flex-direction: column;
+  gap:70px;
+  align-items: center;
+}
+.section10-bg-div .container img{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+.section10-cards-div{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.section10-card-div h3{
+  max-width: 300px;
+  font: 350 20px "Rubik";
+  line-height: 1.2;
+  text-transform: capitalize;
+  margin: 20px 0 10px 0;
+}
+.section10-card-div h4{
+  font: 350 14px "Rubik";
+  line-height: 1.2;
+  color: rgba(128, 128, 128, 0.675);
+  text-transform: capitalize;
+}
+.section10-card-div p{
+  max-width: 320px;
+  font: 350 16px "Rubik";
+  line-height: 28px;
+  color: rgb(128, 128, 128);
+  margin: 20px 0 10px 0;
+}
+.section10-card-div a{
+  max-width: 320px;
+  font: 350 16px "Rubik";
+  line-height: 28px;
+  color:#0087b8;
+  text-transform: capitalize;
+}
+
