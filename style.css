@@ -121,7 +121,8 @@ nav ul {
 .section6-bg-div .container h2,
 .section7-bg-div .container h2,
 .section8-bg-div .container h2,
-.section10-bg-div .container h2 {
+.section10-bg-div .container h2,
+.section11-bg-div .container h2 {
   text-transform: capitalize;
   font: 900 40px "Rubik";
   color: #018cbe;
@@ -422,89 +423,312 @@ nav ul {
 }
 
 /*SECTION 9 STYLES*/
-.section9-bg-div{
+.section9-bg-div {
   height: 100vh;
   display: flex;
   align-items: center;
 }
-.section9-bg-div .container{
+
+.section9-bg-div .container {
   display: flex;
   justify-content: space-between;
 }
-.section9-cards-div{
+
+.section9-cards-div {
   display: flex;
-  gap:25px;
+  gap: 25px;
 }
-.section9-bg-div img{
+
+.section9-bg-div img {
   height: 400px;
 }
-.section9-bg-div i{
+
+.section9-bg-div i {
   font-size: 40px;
   color: #007fad;
   margin-bottom: 30px;
 }
-.section9-card-div h4{
+
+.section9-card-div h4 {
   font: 380 20px "Rubik";
   line-height: 1.2;
 }
-.section9-card-div p{
+
+.section9-card-div p {
   font: 350 16px "Rubik";
   color: gray;
   line-height: 1.7;
   margin: 15px 0 20px 0;
 }
-.section9-card-div a{
+
+.section9-card-div a {
   font: 350 16px "Rubik";
   text-transform: capitalize;
   color: #007fad;
 }
+
 /*SECTION 10 STYLES*/
-.section10-bg-div{
+.section10-bg-div {
   height: 100vh;
   display: flex;
   align-items: center;
 }
-.section10-bg-div .container{
+
+.section10-bg-div .container {
   display: flex;
   flex-direction: column;
-  gap:70px;
+  gap: 70px;
   align-items: center;
 }
-.section10-bg-div .container img{
+
+.section10-bg-div .container img {
   height: 300px;
   width: 300px;
   object-fit: cover;
 }
-.section10-cards-div{
+
+.section10-cards-div {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.section10-card-div h3{
+
+.section10-card-div h3 {
   max-width: 300px;
   font: 350 20px "Rubik";
   line-height: 1.2;
   text-transform: capitalize;
   margin: 20px 0 10px 0;
 }
-.section10-card-div h4{
+
+.section10-card-div h4 {
   font: 350 14px "Rubik";
   line-height: 1.2;
   color: rgba(128, 128, 128, 0.675);
   text-transform: capitalize;
 }
-.section10-card-div p{
+
+.section10-card-div p {
   max-width: 320px;
   font: 350 16px "Rubik";
   line-height: 28px;
   color: rgb(128, 128, 128);
   margin: 20px 0 10px 0;
 }
-.section10-card-div a{
+
+.section10-card-div a {
   max-width: 320px;
   font: 350 16px "Rubik";
   line-height: 28px;
-  color:#0087b8;
+  color: #0087b8;
   text-transform: capitalize;
 }
 
+/*SECTION 11 STYLES*/
+.section11-bg-div {
+  height: 170vh;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+}
+
+.section11-bg-div .container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.section11-bg-div form {
+  border-radius: 20px;
+  padding: 60px 45px;
+  background: #fff;
+}
+
+address {
+  display: flex;
+  justify-content: start;
+  gap: 150px;
+}
+
+.section11-bg-div form label {
+  text-transform: capitalize;
+  width: 100%;
+  font: 350 16px "Rubik";
+  line-height: 28px;
+}
+
+.section11-bg-div form input {
+  padding: 10px;
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid rgba(128, 128, 128, 0.37);
+  margin: 10px 0 20px 0;
+  outline-color: #01a3de;
+}
+
+.section11-bg-div form .inputs-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.section11-bg-div form h3 {
+  margin-bottom: 45px;
+  font: 400 24px "Rubik";
+}
+
+.section11-bg-div form a {
+  display: inline-block;
+  background-color: #018cbe;
+  line-height: 1.5;
+  border-radius: 30px;
+  padding: 15px 35px;
+  color: #fff;
+  text-transform: capitalize;
+  font: 350 16px "Rubik";
+  transition: .4s;
+}
+
+.message-input {
+  height: 200px;
+}
+
+::placeholder {
+  font: 400 16px "Rubik";
+}
+
+.section11-bg-div i {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  color: #007fad;
+}
+
+.section11-bg-div .address-div a {
+  display: inline-block;
+  color: #007fad;
+  margin: 10px;
+  text-align: center;
+  font: 16px "Rubik";
+}
+
+/*FOOTER STYLES*/
+footer {
+  background: #333333;
+  height: 83vh;
+  display: flex;
+  align-items: center;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-columns-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column-div {
+  max-width: 33%;
+}
+
+footer h5 {
+  color: #fff;
+  font: 16px "Roboto";
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+
+.footer-column-div p {
+  font: 350 16px "Rubik";
+  line-height: 28px;
+  margin-top: -8px;
+  color: #737373;
+}
+
+.footer-column-div ul a {
+  font: 350 16px "Rubik";
+  line-height: 36px;
+  color: #959595;
+  text-transform: capitalize;
+  transition: .4s;
+}
+
+.footer-column-div ul a:hover {
+  color: #fff;
+}
+
+.footer-column-div ul {
+  margin-top: -12px;
+}
+
+.footer-column-div a {
+  font-size: 16px;
+  color: #959595;
+  transition: .4s;
+}
+
+.footer-column-div a:hover {
+  color: #fff;
+}
+
+footer input {
+  outline: none;
+  border-radius: 30px 0 0 30px;
+  margin: 0;
+  border: 1px solid #737373;
+  background: transparent;
+  width: 60%;
+  padding: 10px;
+}
+
+footer input::placeholder {
+  text-transform: capitalize;
+  font: 16px "Rubik";
+}
+
+footer button {
+  border-radius: 0 20px 20px 0;
+  margin-left: -4px;
+  background-color: white;
+  border: none;
+  font: 16px "Rubik";
+  text-transform: capitalize;
+  width: 40%;
+  padding: 10px;
+}
+
+.social-icons-div {
+  display: flex;
+  gap: 40px;
+}
+
+.input-button-div {
+  display: flex;
+}
+
+hr {
+  margin: 120px 0 60px 0;
+  width: 100%;
+  border-color: #73737346;
+}
+
+footer h6 {
+  color: #848484;
+  font: 16px "Rubik";
+}
+
+footer h6 a {
+  transition: .4s;
+  color: #737373;
+  font-weight: 600;
+}
+
+footer h6 a:hover {
+  color: white;
+}
