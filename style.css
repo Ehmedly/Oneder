@@ -99,6 +99,10 @@ nav ul {
   color: white;
   text-transform: capitalize;
   font: 16px "Rubik";
+  transition: .3s;
+  &:hover{
+    background-color: black;
+  }
 }
 
 /*SECTION2 STYLES*/
@@ -201,13 +205,35 @@ nav ul {
 .person-div img {
   width: 250px;
 }
-
+.person-div {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  &:hover .section3-social-icons-div{
+    left:0px;
+  }
+}
 .people-div {
   display: flex;
   flex-wrap: wrap;
   gap: 40px 35px;
 }
-
+.section3-social-icons-div i{
+  color: white;
+  margin: 13px 10px;
+}
+.section3-social-icons-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: absolute;
+  left:-36px;
+  height: 100%;
+  background-color:#0087b8;
+  overflow: hidden;
+  transition: 0.3s;
+}
 .person-div h3 {
   font: 400 20px "Rubik";
   padding: 15px 0 15px 15px;
@@ -228,8 +254,6 @@ nav ul {
 
 .section4-bg-div img {
   width: 260px;
-  height: fit-content;
-  object-fit: cover;
 }
 
 .section4-products-div {
@@ -238,6 +262,7 @@ nav ul {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 21px;
+  overflow: hidden;
 }
 
 .section4-links-div a,
@@ -267,6 +292,30 @@ nav ul {
   gap: 15px;
 }
 
+.section4-products-div .icon-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: #00000078;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  overflow: hidden;
+  transition: .3s ease-in-out;
+}
+.section4-products-div .icon-div i{
+  color: white;
+}
+.section4-products-div .image-div{
+  cursor: pointer;
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  &:hover .icon-div{
+    opacity: 1;
+  }
+}
 /*SECTION 5 STYLES*/
 
 .section5-bg-div {
