@@ -413,7 +413,8 @@ nav ul {
 
 /*SECTION 7 STYLES*/
 .section7-bg-div {
-  height: 80vh;
+  background: #f6f6f6;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -432,9 +433,53 @@ nav ul {
   align-items: center;
   justify-content: space-between;
 }
+.section7-card-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  padding:40px;
+  background-color: white;
+  box-shadow: 0 0 50px -40px;
+  border-radius: 15px;
+}
+.section7-cards-div h3{
+  font: 370 28px "Work Sans";
+  text-transform: capitalize;
+  text-align: center;
+}
+.section7-cards-div p{
+  font: 380 48px "Work Sans";
+  text-align: center;
+  color:#007fad;
+  padding: 20px 0;
+}
+.section7-cards-div span{
+  font: 400 16px "Work Sans"; 
+  color: #33333375;
+}
+.section7-cards-div li{
+  font: 400 16px "Work Sans";
+  color: #737373;
+  padding: 10px 0;
+  line-height: 1.5;
+}
+.section7-cards-div a{
+  margin-top: 25px;
+  padding: 12px 40px;
+}
+.section7-line-through-li{
+  text-decoration:line-through;
+  opacity: 0.5;
+}
+.section7-line-through-li i{
+  color: gray;
+}
+
 
 /*SECTION 8 STYLES*/
 .section8-bg-div {
+  background: #f6f6f6;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -614,6 +659,7 @@ address {
   border: 1px solid rgba(128, 128, 128, 0.37);
   margin: 10px 0 20px 0;
   outline-color: #01a3de;
+  outline-width:thin;
 }
 
 .section11-bg-div form .inputs-div {
